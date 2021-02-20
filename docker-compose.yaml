@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    image: vsplate/centos_apache2_php5_mysql5:latest
+    privileged: true
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html
+
